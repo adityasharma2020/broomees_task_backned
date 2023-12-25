@@ -25,7 +25,11 @@ class UserService {
 		try {
 			// first we fetch the user using its email
 			const user = await this.userRepository.getByEmail(email);
-
+			console.log('user:', user);
+			if (!user) {
+				console.log('user does not exist.');
+				throw { error: 'Incorrect email' };
+			}
 			//check incoming plainpassword with the encrypted password
 			const passwordMatch = this.checkPassword(plainPassword, user.password);
 

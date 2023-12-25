@@ -1,0 +1,23 @@
+{
+	"development": {
+		"username": "root",
+		"password": "Aditya@9414",
+		"database": "broomees_task_DEV",
+		"host": "127.0.0.1",
+		"dialect": "mysql"
+	},
+	"test": {
+		"username": "root",
+		"password": null,
+		"database": "database_test",
+		"host": "127.0.0.1",
+		"dialect": "mysql"
+	},
+	"production": {
+		"username": "admin",
+		"password": "Aditya9414",
+		"database": "broomees_task_PRODUCTION",
+		"host": "database-1-broomees-airline-task-db.czsoaw664saz.ap-southeast-2.rds.amazonaws.com",
+		"dialect": "mysql"
+	}
+}

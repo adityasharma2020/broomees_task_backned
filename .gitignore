@@ -1,3 +1,4 @@
 node_modules/
+src/config/config.json
 Airline_backend/src/config/config.json
 .env
